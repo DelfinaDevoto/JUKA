@@ -2,6 +2,10 @@
     margin: 5;
     padding: 0;
     box-sizing: border-box;
+    flex-wrap: wrap;
+}
+nav #toogle, nav label{
+    display: none;
 }
 .navbar{
     display: flex;
@@ -9,6 +13,13 @@
     justify-content: end;
     list-style-type: none;
     gap: 1.25rem;
+}
+.borde{
+    background-color: #088395;
+    border: 3px solid #dbe4ed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 p{
     color: black;
@@ -28,7 +39,7 @@ h3{
 }
 body{
     background-image: url(../assets/img/Fondo.png);
-        background-repeat: no-repeat;
+    background-repeat: no-repeat;
     background-size: cover;
     display: flex;
     flex-direction: row;
@@ -50,11 +61,18 @@ section article h4{
     color: black;
     font-size: large;
 }
-section article img{
+section article .img1{
     clip-path: circle(50%);
     width: 200px;
     height: 200px;
     gap: 1.25rem;
+}
+.elementos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-around;
 }
 div p{
     font-weight: 900;
@@ -62,12 +80,20 @@ div p{
     
 }
 div img{
-    clip-path: circle(65%);
-    width: 250px;
-    height: 250px;
+    clip-path: circle(85%);
+    width: 500px;
+    height: 500px;
     margin-block-start: 10%;
+    
 }
 section article div h3{
+    width:2515px;
+    height: 50px;
+    background-color:rgba(255, 228, 196, 0.336); 
+    border-radius: 1.5625rem;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 5px 0px 23px rgba(0, 0, 0, 0.436);
     color:red
 }
 .section p{
@@ -82,20 +108,37 @@ section article div h3{
     text-align: center;
     box-shadow: 5px 0px 23px rgba(0, 0, 0, 0.436);
     margin-block-start: 10%;
+    object-fit: contain;
 }
 .container-card .producto-img{
     width: 100%;
     height: 70%;
     object-fit: contain;
 }
+.container-card-1{
+    width: 18.75rem;
+    height: 21.875rem;
+    border-radius: 1.5625rem;
+    text-align: center;
+    box-shadow: 5px 0px 23px rgba(0, 0, 0, 0.436);
+    margin-block-start: 10%;
+}
 section article p{
     color:#071952 ;
 }
-section article div div img{
-    clip-path: none;
+section article div img{
+    clip-path: circle(65%);
     object-fit: contain;
     width: 12.5rem;
     height: 12.5rem;
+}
+.dueños-1{
+    margin-left: 20%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 800px;
+    width: 600px;
 }
 .container-products{
     display: flex;
@@ -163,7 +206,7 @@ footer img{
     width: 100%;
     height: 300px;
     grid-template-columns: repeat(9,1fr);
-    grid-template-rows: repeat(9,1fr);
+    grid-template-rows: repeat(2,1fr);
 }
 .img1{
     grid-column-start:1 ;
@@ -179,25 +222,187 @@ footer img{
 }
 .grid h3{
     grid-column-start:  1;
-    grid-column-end: 2;
+    grid-column-end: 3;
     grid-row-start: 2;
     grid-row-end: 3;
 }
-.grid p{
-    grid-column-start: 5 ;
-    grid-column-end: 7;
+.grid-2{
+    display: grid;
+    width: 100%;
+    height: 300px;
+    grid-template-columns: repeat(20,1fr);
+    grid-template-rows: repeat(10,1fr);
+}
+.grid-2 p{
+    grid-column-start: 17 ;
+    grid-column-end: 20;
     grid-row-start: 2;
     grid-row-end: 3;
 }
-.grid .img2{
-    grid-column-start: 5 ;
-    grid-column-end: 6;
-    grid-row-start: 2;
-    grid-row-end: 3;
+.grid-2 .img2{
+    grid-column-start: 17 ;
+    grid-column-end: 18;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+.grid-2 .img3{
+    grid-column-start: 18 ;
+    grid-column-end: 19;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+.grid-2 .img4{
+    grid-column-start: 19 ;
+    grid-column-end: 20;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+.grid-2 .redes-1{
+    grid-column-start: 17 ;
+    grid-column-end: 18;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+.grid-2 .redes-2{
+    grid-column-start: 18 ;
+    grid-column-end: 19;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+.grid-2 .redes-3{
+    grid-column-start: 19 ;
+    grid-column-end: 20;
+    grid-row-start: 5;
+    grid-row-end: 4;
+}
+.datos{
+    margin-left: 10%;
+    grid-column-start: 1 ;
+    grid-column-end: 5;
+    grid-row-start: 6;
+    grid-row-end: 9;
 }
 .grid ul{
     grid-column-start: 1 ;
     grid-column-end: 2;
     grid-row-start: 2;
     grid-row-end: 3;
+}
+@media (max-width:1440px){
+    .registro{
+        width: 1436px;
+    }
+    .ideales{
+        width: 1436px;px;
+    }
+    section article div h3{
+        width: 1436px;px;
+    }
+}
+@media (max-width:1024px){
+    .registro{
+        width: 1020px;
+    }
+    .ideales{
+        width: 1020px;
+    }
+    .borde{
+        width: 1020px;
+    }
+        .grid-2 p{
+            grid-column-start: 15 ;
+            grid-column-end: 20;
+        }
+        .grid-2 .img2{
+            grid-column-start: 15 ;
+            grid-column-end: 16;
+        }
+        .grid-2 .img3{
+            grid-column-start: 17 ;
+            grid-column-end: 18;
+        }
+        .grid-2 .img4{
+            grid-column-start: 19 ;
+            grid-column-end: 20;
+        }
+        .grid-2 .redes-1{
+            grid-column-start: 15 ;
+            grid-column-end: 16;
+        }
+        .grid-2 .redes-2{
+            grid-column-start: 17 ;
+            grid-column-end: 18;
+        }
+        .grid-2 .redes-3{
+            grid-column-start: 19 ;
+            grid-column-end: 20;
+        }
+        section article div h3{
+            width: 1020px;
+        }
+    }
+@media(max-width:768px){
+    .ideales{
+        width: 768px;
+    }
+    .container-products{
+        width: 768px;
+    }
+    .registro{
+        width: 768px;
+    }
+    h2{
+        width: 768px;
+    }
+    .borde{
+        width: 768px;
+    }
+    .dueños-1{
+        margin-left: 11%;
+    }
+}
+@media(max-width: 425px){
+    .ideales{
+        width: 425px;
+        height: 70px;
+        flex-direction: column;
+    }
+    section.ideales p{
+        justify-content: center;
+        color: black;
+        font-size:small;
+    }
+    section.ideales div img{
+        text-align:center;
+        width: 50px;
+        height: 50px;
+        display: flex;
+    }
+    main h2{
+        font-size: medium;
+    }
+    .container-products{
+        justify-items: left;
+        flex-direction: column;
+        justify-content: center;
+        justify-content: space-between;
+        margin-left: 12%;
+    }
+    .registro{
+        width: 425px;
+        height: 160px;
+        background-color: rgb(189, 212, 212);
+        padding: 2;
+    }
+    .grid-2 p{
+        grid-column-start: 15 ;
+        grid-column-end: 21;
+    }
+    .datos{
+        margin-left: 10%;
+        grid-column-start: 1 ;
+        grid-column-end: 16;
+        grid-row-start: 6;
+        grid-row-end: 9;
+    }
 }
