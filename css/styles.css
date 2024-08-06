@@ -21,13 +21,6 @@
     flex-direction: row;
     justify-content: space-evenly;
 }
-.mapa{
-    margin-left: 40%;
-}
-.direccion{
-    margin-left: 40%;
-    font-size: xx-large;
-}
 p{
     color: black;
     font-size: x-large;
@@ -310,6 +303,21 @@ footer img{
     section article div h3{
         width: 1436px;px;
     }
+    .mapa{
+        width: 500px;
+        height: 500px;
+        margin-left: 30%;
+    }
+    .direccion{
+        width: 400px;
+        height: 50px;
+        padding: 2px 3px;
+        box-shadow: 7px 0px 25px rgba(177, 184, 201, 0.699);
+        font-size: medium;
+        border: 1px solid;
+        padding: 2px 5px;
+        margin-left: 30%;
+    }
 }
 @media (max-width:1024px){
     .registro{
@@ -352,6 +360,21 @@ footer img{
         section article div h3{
             width: 1020px;
         }
+        .mapa{
+            width: 500px;
+            height: 500px;
+            margin-left: 30%;
+        }
+        .direccion{
+            width: 400px;
+            height: 50px;
+            padding: 2px 3px;
+            box-shadow: 7px 0px 25px rgba(177, 184, 201, 0.699);
+            font-size: medium;
+            border: 1px solid;
+            padding: 2px 5px;
+            margin-left: 30%;
+        }
     }
 @media(max-width:768px){
     .navbar{
@@ -374,6 +397,21 @@ footer img{
     }
     .dueños-1{
         margin-left: 11%;
+    }
+    .mapa{
+        width: 500px;
+        height: 500px;
+        margin-left: 20%;
+    }
+    .direccion{
+        width: 400px;
+        height: 50px;
+        padding: 2px 3px;
+        box-shadow: 7px 0px 25px rgba(177, 184, 201, 0.699);
+        font-size: medium;
+        border: 1px solid;
+        padding: 2px 5px;
+        margin-left: 20%;
     }
 }
 @media(max-width: 425px){
@@ -541,25 +579,95 @@ footer img{
         grid-row-start: 7;
         grid-row-end: 8;
     }
-    .mapa{
-        height: 350px;
-        width: 350px;
-        margin-left: 5%;
-    }
     .direccion{
-        width: 400px;
+        width: 350px;
         height: 50px;
-        padding: 2ps 3px;
-        text-align: center;
+        padding: 2px 3px;
         box-shadow: 7px 0px 25px rgba(177, 184, 201, 0.699);
         font-size: medium;
-        justify-content: center;
-        margin-top: 5%;
         border: 1px solid;
         padding: 2px 5px;
+        margin-left: 5%;
     }
     .borde{
         width: 415px;
         justify-content:space-around;
     }
+    .mapa{
+        width: 350px;
+        height: 350px;
+        margin-left: 5%;
+    }
 }
+@media(max-width: 375px){
+    .navbar{
+        font-size: xx-small;
+        justify-content: left;
+    }
+    section article .img1{
+        clip-path: circle(50%);
+        width: 100px;
+        height: 100px;
+        gap: 1.25rem;
+    }
+    .grid h1{
+        font-size: 300%;
+        font-style: oblique;
+    }
+    .grid{
+        display: grid;
+        width: 100%;
+        height: 180px;
+    }
+    .grid h3{
+        font-size: large;
+            grid-column-start:  1;
+            grid-column-end: 3;
+            grid-row-start: 2;
+            grid-row-end: 3;
+        }
+        .datos{
+            font-size: small;
+            margin-left: 0;
+        }
+        .ideales{
+            width: 375px;
+            height: 70px;
+            flex-direction: column;
+        }
+        section.ideales p{
+            justify-content: center;
+            color: black;
+            font-size:x-small;
+        }
+        section.ideales div img{
+            width: 50px;
+            height: 50px;
+        }
+        .text-1{
+            width: 365px;
+    }
+    .text{
+        width: 365px;
+    }
+    .nosotros{
+        width: 365px;
+    }
+    .texto{
+        width: 365px;
+    }
+    .mapa{
+        width: 300px;
+        height: 300px;
+    }
+    .direccion{
+        width: 300px;
+        height: 50px;
+    }
+    .borde{
+        width: 365px;
+    }
+    section article div h3{
+        width: 365px;
+    }
+    }
