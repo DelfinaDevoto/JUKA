@@ -21,6 +21,13 @@
     flex-direction: row;
     justify-content: space-evenly;
 }
+.mapa{
+    margin-left: 40%;
+}
+.direccion{
+    margin-left: 40%;
+    font-size: xx-large;
+}
 p{
     color: black;
     font-size: x-large;
