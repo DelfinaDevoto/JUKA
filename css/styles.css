@@ -281,7 +281,8 @@ footer img{
     grid-row-end: 4;
 }
 .datos{
-    margin-left: 10%;
+    font-family:Arial, Helvetica, sans-serif;
+    margin-left: 2%;
     grid-column-start: 1 ;
     grid-column-end: 5;
     grid-row-start: 6;
