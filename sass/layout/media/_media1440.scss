@@ -1,0 +1,35 @@
+@media (max-width:1440px){
+    main{
+        .registro{
+            width: 89rem;
+        }
+        .ideales{ 
+            width: 89rem;
+        }
+        section article div h3{
+            width: 89.75rem;
+            justify-content: center;
+        }
+    }
+    .mapa{
+        width: 31.25rem;
+        height: 31.25rem;
+        margin-left: 30%;
+    }
+    .direccion{
+        width: 25rem;
+        height: 3.125rem;
+        padding: .125rem .1875rem;
+        box-shadow: .4375rem 0rem 1.5625rem rgba(177, 184, 201, 0.699);
+        font-size: medium;
+        border: .0625rem solid;
+        padding: .125rem .3125rem;
+        margin-left: 30%;
+    }
+    .grid{
+        display: grid;
+        width: 25%;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,1fr);
+}
+}

@@ -1,0 +1,67 @@
+@media (max-width:1024px){
+    main{
+        .registro{
+            width: 63.50rem;
+        }
+        .ideales{
+            width: 1020px;
+        }
+        .borde{
+            width: 1010px;
+            margin: 0;
+        }
+        section article div h3{
+            width: 1010px;
+        }
+        .container-products{
+            display: flex;
+            position: relative;
+            justify-content: space-between;
+            flex-direction: column;
+            margin-left: 30%;
+        }
+    }
+        .grid-2 p{
+            grid-column-start: 8;
+            grid-column-end: 11;
+        }
+        .grid-2 .img2{
+            grid-column-start: 8;
+            grid-column-end: 9;
+        }
+        .grid-2 .img3{
+            grid-column-start: 9;
+            grid-column-end: 10;
+        }
+        .grid-2 .img4{
+            grid-column-start: 10;
+            grid-column-end: 11;
+        }
+        .grid-2 .redes-1{
+            grid-column-start: 8;
+            grid-column-end: 9;
+        }
+        .grid-2 .redes-2{
+            grid-column-start: 9;
+            grid-column-end: 10;
+        }
+        .grid-2 .redes-3{
+            grid-column-start: 10;
+            grid-column-end: 11;
+        }
+        .mapa{
+            width: 500px;
+            height: 500px;
+            margin-left: 30%;
+        }
+        .direccion{
+            width: 400px;
+            height: 50px;
+            padding: 2px 3px;
+            box-shadow: 7px 0px 25px rgba(177, 184, 201, 0.699);
+            font-size: medium;
+            border: 1px solid;
+            padding: 2px 5px;
+            margin-left: 30%;
+        }
+    }
