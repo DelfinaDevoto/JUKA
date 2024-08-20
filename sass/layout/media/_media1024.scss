@@ -7,7 +7,9 @@
             width: 1020px;
         }
         .borde{
-            width: 1010px;
+            display: flex;
+            flex-direction: column;
+            width: 1000px;
             margin: 0;
         }
         section article div h3{
