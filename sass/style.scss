@@ -1,5 +1,3 @@
-@import "./layout/media/media1440";
-
 
 body{
     background-image:url(../assets/img/Fondo.png);
@@ -37,11 +35,12 @@ main{
         margin-block-start: 10%;
     }
     .borde{
-        background-color: #088395;
+        background-color: rgb(189, 212, 212);
         border: 3px solid #dbe4ed;
         display: flex;
         flex-direction: row;
-        justify-content: space-evenly;
+        justify-content:space-between;
+        padding: 8px;
     }
     .ideales{
         width:2545px;
@@ -54,7 +53,7 @@ main{
         justify-content: center;
         justify-content: space-around;
         box-shadow: 5px 0px 23px rgba(0, 0, 0, 0.436);
-        padding-top: 1%;
+        padding-top: 8px;
         img{
             text-align:center;
             width: 75px;
@@ -64,7 +63,6 @@ main{
         p{
             color: black;
             font-size: 150%;
-            font-style: oblique;
         }
     }
     .parrafo-uno{
@@ -80,7 +78,6 @@ main{
         display: flex;
         font-size: xx-large;
         justify-content: center;
-        font-style: oblique;
     }
     p{
         color: black;
@@ -110,7 +107,6 @@ section {
     article{
         p{
             color: #071952;
-            font-style: oblique;
         }
         h4{
                 color: #31568d;
@@ -221,7 +217,6 @@ footer{
         color: black;
         font-size: x-large;
         justify-content: space-between;
-        font-style: oblique;
     }
 }
 img{
@@ -231,9 +226,9 @@ img{
 }
 .grid{
     display: grid;
-    width: 100%;
+    width: 150px;
     height: 300px;
-    grid-template-columns: repeat(9,1fr);
+    grid-template-columns: repeat(2,1fr);
     grid-template-rows: repeat(2,1fr);
 }
 .img1{
@@ -260,6 +255,8 @@ img{
     height: 300px;
     grid-template-columns: repeat(10,1fr);
     grid-template-rows: repeat(10,1fr);
+    align-items: center;
+    justify-items: center;
 }
 .grid-2 p{
     grid-column-start: 8;
@@ -310,531 +307,10 @@ img{
     grid-column-end: 5;
     grid-row-start: 6;
     grid-row-end: 9;
+    justify-self: left;
 }
-.grid ul{
-    grid-column-start: 1 ;
-    grid-column-end: 2;
-    grid-row-start: 2;
-    grid-row-end: 3;
-}
-@media (max-width:1440px){
-    main{
-        .registro{
-            width: 89rem;
-        }
-        .ideales{ 
-            width: 89rem;
-        }
-        section article div h3{
-            width: 89.75rem;
-            justify-content: center;
-        }
-    }
-    .mapa{
-        width: 31.25rem;
-        height: 31.25rem;
-        margin-left: 30%;
-    }
-    .direccion{
-        width: 25rem;
-        height: 3.125rem;
-        padding: .125rem .1875rem;
-        box-shadow: .4375rem 0rem 1.5625rem rgba(177, 184, 201, 0.699);
-        font-size: medium;
-        border: .0625rem solid;
-        padding: .125rem .3125rem;
-        margin-left: 30%;
-    }
-    .grid{
-        display: grid;
-        width: 25%;
-        grid-template-columns: repeat(2,1fr);
-        grid-template-rows: repeat(2,1fr);
-}
-}
-@media (max-width:1024px){
-    main{
-        .registro{
-            width: 63.50rem;
-        }
-        .ideales{
-            width: 1020px;
-        }
-        .borde{
-            width: 1010px;
-            margin: 0;
-        }
-        section article div h3{
-            width: 1010px;
-        }
-        .container-products{
-            display: flex;
-            position: relative;
-            justify-content: space-between;
-            flex-direction: column;
-            margin-left: 30%;
-        }
-    }
-        .grid-2 p{
-            grid-column-start: 8;
-            grid-column-end: 11;
-        }
-        .grid-2 .img2{
-            grid-column-start: 8;
-            grid-column-end: 9;
-        }
-        .grid-2 .img3{
-            grid-column-start: 9;
-            grid-column-end: 10;
-        }
-        .grid-2 .img4{
-            grid-column-start: 10;
-            grid-column-end: 11;
-        }
-        .grid-2 .redes-1{
-            grid-column-start: 8;
-            grid-column-end: 9;
-        }
-        .grid-2 .redes-2{
-            grid-column-start: 9;
-            grid-column-end: 10;
-        }
-        .grid-2 .redes-3{
-            grid-column-start: 10;
-            grid-column-end: 11;
-        }
-        .mapa{
-            width: 500px;
-            height: 500px;
-            margin-left: 30%;
-        }
-        .direccion{
-            width: 400px;
-            height: 50px;
-            padding: 2px 3px;
-            box-shadow: 7px 0px 25px rgba(177, 184, 201, 0.699);
-            font-size: medium;
-            border: 1px solid;
-            padding: 2px 5px;
-            margin-left: 30%;
-        }
-    }
-    @media (max-width:768px){
-        main{
-            section article div h3{
-                width: 750px;
-            }
-            .ideales{
-                width: 765px;
-            }
-            .container-products{
-                width: 768px;
-            }
-            .registro{
-                width: 765px;
-            }
-            h2{
-                width: 768px;
-            }
-            .borde{
-                img{
-                    width: 50px;
-                    height:50px;
-                }
-                p{
-                    font-size: small;
-                }
-                width: 750px;
-            }
-            .dueños-1{
-                margin-left: 11%;
-            }
-            .container-products{
-                flex-direction: row;
-                flex-wrap: wrap;
-                margin-left: 0%;
-                justify-content: space-around;
-            }
-        }
-        .mapa{
-            width: 500px;
-            height: 500px;
-            margin-left: 20%;
-        }
-        .direccion{
-            width: 400px;
-            height: 50px;
-            padding: 2px 3px;
-            box-shadow: 7px 0px 25px rgba(177, 184, 201, 0.699);
-            font-size: medium;
-            border: 1px solid;
-            padding: 2px 5px;
-            margin-left: 20%;
-        }
-        .grid-2 .img2{
-            margin-inline: 30px;
-        }
-        .grid-2 .img3{
-            margin-inline: 30px;
-        }
-        .grid-2 .img4{
-            margin-inline: 30px;
-        }
-    }
-    @media(max-width: 425px){
-        header{
-            .img1{
-                clip-path: circle(50%);
-                width: 100px;
-                height: 100px;
-                gap: 1.25rem;
-            }
-            h1{
-                font-size: 43px;
-            }
-            .grid{
-                display: grid;
-                width: 200px;
-                height: 200px;
-                grid-template-columns: repeat(5,1fr);
-                grid-template-rows: repeat(2,1fr);
-            }
-            h3{
-                grid-column-start: 1;
-                grid-column-end: 4;
-            }
-        }
-        main{
-            .container-card{
-                width: 200px;
-                height: 250px;
-                margin-top: 10px;
-                h4{
-                    button{
-                        width: 110px;
-                        height: 50px;
-                    }
-                }
-            }
-            .producto-img{
-                img{
-                    width: 170px;
-                    height: 170px;
-                }
-            }
-            h2{
-                font-size: x-large;
-                text-align: center;
-                justify-content: center;
-            }
-            .ideales{
-                width: 420px;
-                height: 70px;
-                flex-direction: column;
-                p{
-                    justify-content: center;
-                    color: black;
-                    font-size: small;
-                }
-                img{
-                    text-align:center;
-                    width: 50px;
-                    height: 50px;
-                    display: flex;
-                }
-            }
-            .borde{
-                padding-left: 0%;
-                margin-left: 0%;
-                flex-wrap: wrap;
-                width: 420px;
-            }
-            section article div h3{
-                width: 400px;
-                height: 50px;
-                padding: 2px 5px;
-                border: 1px solid;
-                overflow: hidden;
-                text-align:center;
-                box-shadow: 5px 0px 23px rgba(0, 0, 0, 0.436);
-                margin-block-start: 5%;
-                font-size: large;
-            }
-            h2{
-                display: flex;
-                justify-content: left;
-                text-align: center;
-            }
-            .container-products{
-                flex-direction: column;
-                flex-wrap: wrap;
-                margin-left: 0%;
-                justify-content: space-around;
-                justify-items: center;
-                padding-left: 100px;
-                padding-right: 0;
-            }
-            .container-card-1{
-                width: 200px;
-                height: 250px;
-                margin-top: 10px;
-                p{
-                    font-size: 16px;
-                }
-            }
-            .registro{
-                width: 410px;
-                height: 160px;
-                background-color: rgb(189, 212, 212);
-                padding: 0;
-                margin-left: 0;
-            }
-        }
-        .nosotros{
-            width: 400px;
-            height: 30px;
-            box-shadow: 7px 0px 25px rgba(87, 127, 214, 0.699);
-            font-size: x-large;
-            text-align: center;
-            justify-content: center;
-        }
-        .text{
-            width: 400px;
-            height: 50px;
-            padding: 2ps 3px;
-            text-align: center;
-            box-shadow: 7px 0px 25px rgba(0, 0, 0, 0.436);
-            font-size: medium;
-            justify-content: center;
-        }
-        .text-1{
-            width: 400px;
-            height: 50px;
-            padding: 2ps 3px;
-            text-align: center;
-            box-shadow: 7px 0px 25px rgba(87, 125, 214, 0.699);
-            font-size: medium;
-            justify-content: center;
-            margin-top: 5%;
-            border: 1px solid;
-            padding: 2px 5px;
-        }
-        .texto{
-            width: 400px;
-            height: 490px;
-            padding: 2px 5px;
-            border: 1px solid;
-            overflow: hidden;
-            text-align:center;
-            box-shadow: 5px 0px 23px rgba(0, 0, 0, 0.436);
-            margin-block-start: 5%;
-            font-size: large;
-        }
-        .dueños-1{
-            width: 300px;
-            height: 300px;
-        }
-        .datos{
-            font-size: small;
-            margin-left: 0;
-            grid-column-start: 0 ;
-            grid-column-end: 7;
-            grid-row-start: 5;
-            grid-row-end: 8;
-        }
-        .elementos img{
-            width: 150px;
-            height: 150px;
-        }
-        .grid-2{
-            display: grid;
-            width: 100%;
-            height: 200px;
-            grid-template-columns: repeat(9,1fr);
-            grid-template-rows: repeat(8,1fr);
-        }
-        .grid-2 p{
-            font-size: medium;
-            grid-column-start: 8;
-            grid-column-end: 11;
-            grid-row-start: 4;
-            grid-row-end: 5;
-        }
-        .grid-2 .img2{
-            width: 30px;
-            height: 30px;
-            grid-column-start: 8;
-            grid-column-end: 9;
-            grid-row-start: 6;
-            grid-row-end: 7;
-            margin-inline: 20px;
-        }
-        .grid-2 .img3{
-            width: 30px;
-            height: 30px;
-            grid-column-start: 9 ;
-            grid-column-end: 10;
-            grid-row-start: 6;
-            grid-row-end: 7;
-            margin-inline: 20px;
-        }
-        .grid-2 .img4{
-            width: 30px;
-            height: 30px;
-            grid-column-start: 10;
-            grid-column-end: 11;
-            grid-row-start: 6;
-            grid-row-end: 7;
-            margin-inline: 20px;
-        }
-        .grid-2 .redes-1{
-            font-size: small;
-            grid-column-start: 8;
-            grid-column-end: 9;
-            grid-row-start: 7;
-            grid-row-end: 8;
-        }
-        .grid-2 .redes-2{
-            font-size: small;
-            grid-column-start: 9;
-            grid-column-end: 10;
-            grid-row-start: 8;
-            grid-row-end: 7;
-        }
-        .grid-2 .redes-3{
-            font-size: small;
-            grid-column-start: 10 ;
-            grid-column-end: 11;
-            grid-row-start: 7;
-            grid-row-end: 8;
-        }
-        .direccion{
-            width: 350px;
-            height: 50px;
-            padding: 2px 3px;
-            box-shadow: 7px 0px 25px rgba(177, 184, 201, 0.699);
-            font-size: medium;
-            border: 1px solid;
-            padding: 2px 5px;
-            margin-left: 5%;
-        }
-        .mapa{
-            width: 350px;
-            height: 350px;
-            margin-left: 5%;
-        }
-    }
-    @media(max-width: 375px){
-        header{
-            .navbar{
-                    display: flex;
-                    flex-direction: row;
-                    font-size: small;
-                    list-style-type: none;
-                    justify-content: end;
-                    margin-left: 250px;
-                    gap: 7px;
-            }
-        }
-        main{
-            .ideales{
-                width: 370px;
-                height: 70px;
-                flex-direction: column;
-                p{
-                    justify-content: center;
-                    color: black;
-                    font-size: x-small;
-                    margin-left: 4px;
-                }
-                img{
-                    text-align:center;
-                    width: 40px;
-                    height: 40px;
-                    display: flex;
-                    flex-wrap: wrap;
-                }
-            }
-            .text-1{
-                width: 345px;
-                height: 50px;
-                padding: 2ps 3px;
-                text-align: center;
-                box-shadow: 7px 0px 25px rgba(87, 125, 214, 0.699);
-                font-size: medium;
-                justify-content: center;
-                margin-top: 5%;
-                border: 1px solid;
-                padding: 2px 5px;
-            }
-            .text{
-                width: 360px;
-            }
-            .nosotros{
-                width: 360px;
-            }
-            .texto{
-                width: 350px;
-                height: 530px;
-            }
-            .registro{
-                width: 365px;
-                height: 160px;
-                background-color: rgb(189, 212, 212);
-                .boton button{
-                    width: 90px;
-                    height: 35px;
-                }
-            }
-            .mapa{
-                width: 325px;
-                height: 325px;
-                margin-left: 10px;
-            }
-            .direccion{
-                width: 300px;
-                height: 50px;
-                padding: 2px 3px;
-                box-shadow: 7px 0px 25px rgba(177, 184, 201, 0.699);
-                font-size: medium;
-                border: 1px solid;
-                padding: 2px 5px;
-                margin-left: 10px;
-            }
-            .borde{
-                flex-wrap: wrap;
-                width: 355px;
-                justify-content: space-around;
-            }
-        }
-            .grid-2 p{
-                font-size: medium;
-        }
-            .grid-2 .redes-1{
-                font-size: x-small;
-        }
-            .grid-2 .redes-2{
-                font-size: x-small;
-        }
-            .grid-2 .redes-3{
-                font-size: x-small;
-        }
-        .grid-2 .img2{
-            width: 25px;
-            height: 25px;
-        }
-        .grid-2 .img3{
-            width: 25px;
-            height: 25px;;
-        }
-        .grid-2 .img4{
-            width: 25px;
-            height: 25px;
-        }
-        .datos{
-                li{
-                    font-size: x-small;
-            }
-        }
-    }
-    
+@import "./layout/media/media1440";
+@import "./layout/media/media1024";
+@import "./layout/media/media768";
+@import "./layout/media/media425";
+@import "./layout/media/media375";
