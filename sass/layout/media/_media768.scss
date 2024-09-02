@@ -6,24 +6,21 @@
         .ideales{
             width: 765px;
         }
-        .container-products{
-            width: 768px;
-        }
         .registro{
-            width: 765px;
+            width: 745px;
         }
         h2{
             width: 768px;
         }
         .borde{
             img{
-                width: 50px;
-                height:50px;
+                width: 45px;
+                height:45px;
             }
             p{
-                font-size: small;
+                font-size: large;
             }
-            width: 750px;
+            width: 715px;
         }
         .dueños-1{
             margin-left: 11%;
@@ -33,6 +30,7 @@
             flex-wrap: wrap;
             margin-left: 0%;
             justify-content: space-around;
+            gap: .0938rem;
         }
     }
     .mapa{

@@ -1,5 +1,8 @@
 @media(max-width: 425px){
     header{
+        .navbar{
+            font-size: x-small;
+        }
         .img1{
             clip-path: circle(50%);
             width: 100px;
@@ -13,7 +16,7 @@
             display: grid;
             width: 200px;
             height: 200px;
-            grid-template-columns: repeat(5,1fr);
+            grid-template-columns: repeat(2,1fr);
             grid-template-rows: repeat(2,1fr);
         }
         h3{
@@ -55,8 +58,10 @@
             }
         }
         h2{
+            width: 400px;
+            height: 30px;
+            box-shadow: 7px 0px 25px rgba(87, 127, 214, 0.699);
             font-size: x-large;
-            text-align: center;
             justify-content: center;
         }
         .ideales{
@@ -80,8 +85,7 @@
             flex-wrap: wrap;
             flex-direction: column;
             justify-content: space-around;
-            width: 400px;
-            padding-left: 0%;
+            width: 390px;
             margin-left: 0%;
             p{
                 font-size: medium;
@@ -102,11 +106,6 @@
             box-shadow: 5px 0px 23px rgba(0, 0, 0, 0.436);
             margin-block-start: 5%;
             font-size: large;
-        }
-        h2{
-            display: flex;
-            justify-content: left;
-            text-align: center;
         }
         .container-products{
             flex-direction: column;
@@ -184,7 +183,6 @@
     }
         .grid-2{
             display: grid;
-            width: 400px;
             height: 150px;
             grid-template-columns: repeat(9,1fr);
             grid-template-rows: repeat(5,1fr);

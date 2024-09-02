@@ -3,7 +3,7 @@
         .navbar{
                 display: flex;
                 flex-direction: row;
-                font-size: small;
+                font-size: x-small;
                 list-style-type: none;
                 justify-content: end;
                 margin-left: 250px;
@@ -11,8 +11,14 @@
         }
     }
     main{
+        h2{
+            width: 22.5rem;
+        }
+        section article div h3{
+            width: 21.875rem;
+        }
         .ideales{
-            width: 370px;
+            width: 360px;
             height: 70px;
             flex-direction: column;
             p{
@@ -32,14 +38,12 @@
         .text-1{
             width: 345px;
             height: 50px;
-            padding: 2ps 3px;
-            text-align: center;
             box-shadow: 7px 0px 25px rgba(87, 125, 214, 0.699);
             font-size: medium;
             justify-content: center;
-            margin-top: 5%;
+            margin-top: .5625rem;
             border: 1px solid;
-            padding: 2px 5px;
+            margin-left: .0625rem;
         }
         .text{
             width: 360px;
@@ -77,11 +81,14 @@
         }
         .borde{
             flex-wrap: wrap;
-            width: 355px;
+            width: 345px;
             justify-content: space-around;
         }
     }
     footer{
+        .grid-2{
+            width: 300px;
+        }
         .grid-2 p{
             font-size: medium;
     }
@@ -103,7 +110,7 @@
     }
     .grid-2 .img3{
         width: 25px;
-        height: 25px;;
+        height: 25px;
     }
     .grid-2 .img4{
         width: 25px;
