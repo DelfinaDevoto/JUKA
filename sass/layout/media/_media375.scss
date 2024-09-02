@@ -18,7 +18,7 @@
             width: 21.875rem;
         }
         .ideales{
-            width: 360px;
+            width: 355px;
             height: 70px;
             flex-direction: column;
             p{
@@ -117,9 +117,11 @@
         height: 25px;
     }
     .datos{
+        margin-top: 13px;
             li{
                 font-size: x-small;
                 justify-self: left;
+                margin-top: 3px;
         }
     }
     }

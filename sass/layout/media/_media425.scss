@@ -193,7 +193,9 @@
             grid-column-end: 7;
             grid-row-start: 1;
             grid-row-end: 4;
-            justify-self: left;
+            padding-top: 5px;
+            list-style-type: none;
+            padding-left: 0;
         }
         .grid-2 p{
             font-size: large;

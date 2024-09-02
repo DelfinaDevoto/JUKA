@@ -586,7 +586,9 @@ img {
     grid-column-end: 7;
     grid-row-start: 1;
     grid-row-end: 4;
-    justify-self: left; }
+    padding-top: 5px;
+    list-style-type: none;
+    padding-left: 0; }
   .grid-2 p {
     font-size: large;
     grid-column-start: 6;
@@ -650,7 +652,7 @@ img {
   main section article div h3 {
     width: 21.875rem; }
   main .ideales {
-    width: 360px;
+    width: 355px;
     height: 70px;
     flex-direction: column; }
     main .ideales p {
@@ -726,9 +728,12 @@ img {
   footer .grid-2 .img4 {
     width: 25px;
     height: 25px; }
-  footer .datos li {
-    font-size: x-small;
-    justify-self: left; } }
+  footer .datos {
+    margin-top: 13px; }
+    footer .datos li {
+      font-size: x-small;
+      justify-self: left;
+      margin-top: 3px; } }
 
 @media (max-width: 320px) {
   header .navbar {
