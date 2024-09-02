@@ -25,7 +25,7 @@
                 justify-content: center;
                 color: black;
                 font-size: x-small;
-                margin-left: 4px;
+                margin-left: .5rem;
             }
             img{
                 text-align:center;
@@ -33,6 +33,7 @@
                 height: 40px;
                 display: flex;
                 flex-wrap: wrap;
+                margin-right: .0625rem;
             }
         }
         .text-1{
@@ -117,7 +118,7 @@
         height: 25px;
     }
     .datos{
-        margin-top: 13px;
+        margin-top: 25px;
             li{
                 font-size: x-small;
                 justify-self: left;
