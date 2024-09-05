@@ -329,6 +329,32 @@ img {
   grid-row-end: 9;
   justify-self: left; }
 
+@media (max-width: 1920px) {
+  main .registro {
+    width: 100%; }
+  main .ideales {
+    width: 100%; }
+  main section article div h3 {
+    width: 100%;
+    justify-content: center; }
+  main .mapa {
+    width: 31.25rem;
+    height: 31.25rem;
+    margin-left: 35%; }
+  main .direccion {
+    width: 25rem;
+    height: 3.125rem;
+    padding: .125rem .1875rem;
+    box-shadow: 0.4375rem 0rem 1.5625rem rgba(177, 184, 201, 0.699);
+    font-size: medium;
+    border: .0625rem solid;
+    padding: .125rem .3125rem;
+    margin-left: 35%; }
+  main .dueños-1 {
+    margin-left: 35%; }
+  main .borde {
+    flex-direction: column; } }
+
 @media (max-width: 1440px) {
   main .registro {
     width: 89rem; }
@@ -337,11 +363,11 @@ img {
   main section article div h3 {
     width: 89.75rem;
     justify-content: center; }
-  .mapa {
+  main .mapa {
     width: 31.25rem;
     height: 31.25rem;
     margin-left: 30%; }
-  .direccion {
+  main .direccion {
     width: 25rem;
     height: 3.125rem;
     padding: .125rem .1875rem;
@@ -350,7 +376,7 @@ img {
     border: .0625rem solid;
     padding: .125rem .3125rem;
     margin-left: 30%; }
-  .grid {
+  main .grid {
     display: grid;
     width: 25%;
     grid-template-columns: repeat(2, 1fr);
@@ -364,16 +390,15 @@ img {
   main .borde {
     display: flex;
     flex-direction: column;
-    width: 1000px;
-    margin: 0; }
+    width: 990px; }
   main section article div h3 {
     width: 1010px; }
   main .container-products {
-    display: flex;
-    position: relative;
-    justify-content: space-between;
-    flex-direction: column;
-    margin-left: 30%; }
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 0%;
+    justify-content: space-around;
+    gap: 100px; }
   .grid-2 p {
     grid-column-start: 8;
     grid-column-end: 11; }
@@ -433,11 +458,11 @@ img {
     margin-left: 0%;
     justify-content: space-around;
     gap: .0938rem; }
-  .mapa {
+  main .mapa {
     width: 500px;
     height: 500px;
-    margin-left: 20%; }
-  .direccion {
+    margin-left: 15%; }
+  main .direccion {
     width: 400px;
     height: 50px;
     padding: 2px 3px;
@@ -445,7 +470,7 @@ img {
     font-size: medium;
     border: 1px solid;
     padding: 2px 5px;
-    margin-left: 20%; }
+    margin-left: 15%; }
   .grid-2 .redes-1 {
     margin-inline: 15px; }
   .grid-2 .redes-2 {
@@ -664,7 +689,7 @@ img {
     grid-row-end: 7;
     margin-inline: 10px; } }
 
-@media (max-width: 375px) {
+@media (min-width: 375px) and (max-width: 390px) {
   header .navbar {
     display: flex;
     flex-direction: row;

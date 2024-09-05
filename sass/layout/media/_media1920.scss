@@ -1,19 +1,19 @@
-@media (max-width:1440px){
+@media (max-width:1920px){
     main{
         .registro{
-            width: 89rem;
+            width: 100%;
         }
         .ideales{ 
-            width: 89rem;
+            width: 100%;
         }
         section article div h3{
-            width: 89.75rem;
+            width: 100%;
             justify-content: center;
         }
     .mapa{
         width: 31.25rem;
         height: 31.25rem;
-        margin-left: 30%;
+        margin-left: 35%;
     }
     .direccion{
         width: 25rem;
@@ -23,13 +23,13 @@
         font-size: medium;
         border: .0625rem solid;
         padding: .125rem .3125rem;
-        margin-left: 30%;
+        margin-left: 35%;
     }
-    .grid{
-        display: grid;
-        width: 25%;
-        grid-template-columns: repeat(2,1fr);
-        grid-template-rows: repeat(2,1fr);
-}
-}
-}
+    .dueños-1{
+        margin-left: 35%;
+    }
+    .borde{
+        flex-direction: column;
+    }
+        }
+            }
