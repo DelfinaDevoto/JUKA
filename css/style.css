@@ -7,7 +7,8 @@ body {
   flex-wrap: wrap; }
 
 header .navbar li a:hover {
-  background: #8bb8e6; }
+  background: #bed1e4;
+  transition-duration: 3s, 4s; }
 
 header ul {
   display: flex;
@@ -27,7 +28,12 @@ header h3 {
 
 header h3:hover {
   transform: scale(1.1);
-  margin-left: 15px; }
+  margin-left: 5%; }
+
+header h1:hover {
+  transform: scale(1.2);
+  transition-duration: 3s, 1s;
+  margin-left: 12%; }
 
 main .ideales div img:hover {
   filter: drop-shadow(2px 2px 10px);
@@ -42,17 +48,20 @@ main .container-card-1 {
   margin-block-start: 10%; }
 
 main .borde {
-  background-color: #bdd4d4;
-  border: 3px solid #dbe4ed;
+  background-color: rgba(255, 228, 196, 0.438);
+  border: 3px solid #fdfdfd;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   padding: 8px; }
+  main .borde img {
+    width: 80px;
+    height: 80px; }
 
 main .ideales {
   width: 2545px;
   height: 6.25rem;
-  background-color: rgba(255, 228, 196, 0.521);
+  background-color: rgba(248, 214, 172, 0.521);
   border-radius: 1.5625rem;
   display: flex;
   flex-direction: row;
@@ -65,22 +74,25 @@ main .ideales {
     text-align: center;
     width: 75px;
     height: 75px;
-    display: flex; }
+    display: flex;
+    flex-wrap: wrap; }
   main .ideales p {
     color: black;
-    font-size: 150%; }
+    font-size: 150%;
+    display: flex;
+    flex-wrap: wrap; }
 
 main .parrafo-uno p {
   color: black;
   font-size: large; }
 
 main h2 {
-  color: #071952;
   padding: 100;
   margin: 200;
   display: flex;
   font-size: xx-large;
-  justify-content: center; }
+  justify-content: center;
+  color: #315B9A; }
 
 main p {
   color: black;
@@ -97,14 +109,21 @@ main h3 {
 
 main .registro {
   width: 2545px;
-  height: 200px;
-  background-color: #bdd4d4;
+  height: 165px;
+  background-color: rgba(255, 220, 196, 0.459);
+  border-radius: 1.5625rem;
+  box-shadow: 5px 0px 23px rgba(0, 0, 0, 0.436);
   padding: 2; }
+  main .registro h3 {
+    justify-self: center;
+    margin-bottom: 30px;
+    margin-block-start: 45px; }
 
 main h5 {
   padding: 0;
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  color: #315B9A; }
 
 main section article p {
   color: #071952; }
@@ -260,18 +279,24 @@ img {
   grid-row-end: 3; }
 
 .grid-2 .img2 {
+  width: 3.4375rem;
+  height: 3.4375rem;
   grid-column-start: 8;
   grid-column-end: 9;
   grid-row-start: 3;
   grid-row-end: 4; }
 
 .grid-2 .img3 {
+  width: 3.4375rem;
+  height: 3.4375rem;
   grid-column-start: 9;
   grid-column-end: 10;
   grid-row-start: 3;
   grid-row-end: 4; }
 
 .grid-2 .img4 {
+  width: 3.4375rem;
+  height: 3.4375rem;
   grid-column-start: 10;
   grid-column-end: 11;
   grid-row-start: 3;
@@ -529,7 +554,8 @@ img {
   main .registro {
     width: 415px;
     height: 160px;
-    background-color: #bdd4d4;
+    background-color: rgba(255, 220, 196, 0.459);
+    opacity: 5;
     padding: 0;
     margin-left: 0; }
   main .nosotros {
@@ -686,7 +712,8 @@ img {
   main .registro {
     width: 365px;
     height: 160px;
-    background-color: #bdd4d4; }
+    background-color: rgba(255, 220, 196, 0.459);
+    opacity: 5; }
     main .registro .boton button {
       width: 90px;
       height: 35px; }
@@ -747,13 +774,13 @@ img {
     gap: 7px; }
   main .ideales {
     width: 300px;
-    height: 70px;
-    flex-direction: column; }
+    height: 70px; }
     main .ideales p {
       justify-content: center;
       color: black;
       font-size: xx-small;
-      margin-left: 4px; }
+      margin-left: 4px;
+      gap: 3px; }
     main .ideales img {
       text-align: center;
       width: 30px;
@@ -784,7 +811,8 @@ img {
   main .registro {
     width: 300px;
     height: 160px;
-    background-color: #bdd4d4; }
+    background-color: rgba(255, 220, 196, 0.459);
+    opacity: 5; }
     main .registro .boton button {
       width: 90px;
       height: 35px; }
