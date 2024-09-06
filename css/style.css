@@ -128,13 +128,15 @@ main h5 {
   justify-content: center;
   color: #315B9A; }
 
-main section article p {
+main section article .texto {
   background-color: rgba(255, 220, 196, 0.459);
   border-radius: 1.5625rem;
   box-shadow: 5px 0px 23px rgba(0, 0, 0, 0.436);
   padding: 4;
   overflow: hidden;
-  text-align: center;
+  text-align: center; }
+
+main section article p {
   color: #0c0c0c; }
 
 main section article h4 {
