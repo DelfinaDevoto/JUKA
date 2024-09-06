@@ -35,7 +35,6 @@ header{
         transition-duration: 3s, 1s;
         margin-left: 12%;
     }
-    
 }
 main{
     .ideales div img:hover{
@@ -52,20 +51,24 @@ main{
     }
     .borde{
         img{
-            width: 80px;
-            height: 80px;
+            width: 60px;
+            height: 60px;
+            margin-left: 1%;
+            margin-top: 1%;
             }
-        background-color: rgba(255, 228, 196, 0.438);
-        border: 3px solid #fdfdfd;
-        display: flex;
-        flex-direction: row;
-        justify-content:space-between;
-        padding: 8px;
+            p{
+                margin-left: 1%;
+            }
+            height: 700%;
+            background-color: rgba(255, 220, 196, 0.459);
+            border-radius: 1.5625rem;
+            box-shadow: 5px 0px 23px rgba(0, 0, 0, 0.436);
+            padding: 2;
     }
     .ideales{
         width:2545px;
         height: 6.25rem;
-        background-color:rgba(248, 214, 172, 0.521); 
+        background-color:rgba(255, 220, 196, 0.459); 
         border-radius: 1.5625rem;
         display: flex;
         flex-direction: row;
@@ -137,7 +140,13 @@ h5{
 section {
     article{
         p{
-            color: #071952;
+            background-color: rgba(255, 220, 196, 0.459);
+            border-radius: 1.5625rem;
+            box-shadow: 5px 0px 23px rgba(0, 0, 0, 0.436);
+            padding: 4;
+            overflow: hidden;
+            text-align:center;
+            color: #0c0c0c;
         }
         h4{
                 color: #31568d;
@@ -219,12 +228,13 @@ div img{
     margin-block-start: 10%;  
 }
 .dueños-1{
-    margin-left: 20%;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-left: 12%;
+    margin-top: 2%;
     height: 800px;
-    width: 600px;
+    width: 800px;
 }
 .container-products{
     display: flex;
